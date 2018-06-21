@@ -62,7 +62,7 @@ def merge_pdf(catalog, pdf_list, output_path):
 if __name__ == '__main__':
     html = get_html('http://cn.linux.vbird.org/linux_basic/linux_basic.php')
     catalog = get_catalog(html)
-    # down_as_pdf(catalog)
+    down_as_pdf(catalog)
     pdf_list = get_pdf_list('./pdf')
     pdf_list.sort()
     merge_pdf(catalog, pdf_list, '鸟哥的Linux私房菜：基础学习篇.pdf')
